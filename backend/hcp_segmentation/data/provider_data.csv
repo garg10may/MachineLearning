@@ -1,0 +1,126 @@
+hcp_id,provider_name,specialty,region,state,practice_type,years_in_practice,patient_panel_size,academic_affiliation,digital_adoption_score,access_restriction_score,market_potential_score,synthetic_segment
+HCP0001,Allison Hill,Neurology,Northeast,TN,Integrated Delivery Network,5,674,False,86.4,36.7,0.7,Low Opportunity
+HCP0002,Noah Rhodes,Primary Care,Midwest,PW,Independent,27,2208,False,63.7,38.7,75.6,Nurture
+HCP0003,Angie Henderson,Neurology,Northeast,MA,Hospital-owned,27,3093,False,46.9,46.3,99.3,Nurture
+HCP0004,Daniel Wagner,Oncology,Midwest,RI,Independent,14,2822,False,51.3,20.8,82.9,Nurture
+HCP0005,Cristian Santos,Cardiology,South,MD,Integrated Delivery Network,10,1131,False,35.4,56.8,25.0,Low Opportunity
+HCP0006,Connie Lawrence,Rheumatology,Northeast,TN,Independent,2,1643,False,46.0,55.9,58.3,Low Opportunity
+HCP0007,Abigail Shaffer,Neurology,South,PR,Hospital-owned,33,1863,False,55.6,50.1,61.3,Nurture
+HCP0008,Gina Moore,Neurology,Northeast,DE,Hospital-owned,34,1056,False,76.5,53.7,52.2,Nurture
+HCP0009,Gabrielle Davis,Cardiology,Northeast,VA,Hospital-owned,10,1115,False,93.0,48.2,38.4,Nurture
+HCP0010,Ryan Munoz,Primary Care,South,MH,Academic,3,1024,False,37.1,84.7,35.3,Low Opportunity
+HCP0011,Monica Herrera,Primary Care,West,ME,Academic,6,3184,False,69.1,40.2,98.7,Growth
+HCP0012,Jamie Arnold,Rheumatology,Northeast,NY,Hospital-owned,4,2476,False,43.3,35.6,84.3,Nurture
+HCP0013,Lisa Hensley,Oncology,Midwest,ME,Academic,30,2746,False,70.5,26.2,91.2,Growth
+HCP0014,Michele Williams,Neurology,West,TN,Integrated Delivery Network,32,2677,False,59.6,20.3,94.1,Growth
+HCP0015,Dylan Miller,Primary Care,West,MT,Hospital-owned,7,3083,False,29.0,15.9,92.7,Nurture
+HCP0016,Brian Ramirez,Endocrinology,South,MD,Hospital-owned,27,650,False,78.7,23.3,16.9,Low Opportunity
+HCP0017,Holly Wood,Pulmonology,Midwest,MO,Independent,8,2862,False,51.1,40.5,86.1,Nurture
+HCP0018,Derek Zuniga,Cardiology,Midwest,UT,Integrated Delivery Network,14,539,False,52.4,49.0,23.3,Low Opportunity
+HCP0019,Lisa Jackson,Neurology,South,LA,Hospital-owned,22,1704,True,42.7,43.1,65.5,Nurture
+HCP0020,Carla Gray,Pulmonology,South,OH,Hospital-owned,26,2044,False,50.2,25.9,60.5,Nurture
+HCP0021,Margaret Hawkins DDS,Neurology,Midwest,DC,Independent,31,1369,False,69.7,60.9,39.6,Low Opportunity
+HCP0022,Patty Perez,Primary Care,Northeast,ID,Integrated Delivery Network,3,766,True,58.6,57.5,26.6,Low Opportunity
+HCP0023,Ethan Adams,Rheumatology,Northeast,MT,Hospital-owned,8,898,False,67.9,38.6,26.2,Low Opportunity
+HCP0024,Tommy Walter,Rheumatology,West,TN,Academic,11,2700,True,68.5,28.3,92.4,Growth
+HCP0025,Matthew Foster,Neurology,Midwest,MS,Independent,12,1258,False,85.8,53.5,21.5,Low Opportunity
+HCP0026,Judy Baker,Endocrinology,Midwest,TX,Integrated Delivery Network,35,1234,True,55.8,45.9,32.1,Low Opportunity
+HCP0027,Justin Baker,Primary Care,Midwest,WA,Independent,28,2981,False,35.4,11.6,87.4,Nurture
+HCP0028,Stephanie Ross,Cardiology,West,MH,Independent,12,760,True,81.2,40.6,5.3,Low Opportunity
+HCP0029,Zachary Hicks,Cardiology,Northeast,HI,Integrated Delivery Network,35,2958,False,56.0,47.5,85.2,Nurture
+HCP0030,Anthony Rodriguez,Oncology,Northeast,RI,Integrated Delivery Network,18,2974,False,82.1,23.1,86.1,Growth
+HCP0031,Rebecca Henderson,Oncology,Midwest,OK,Independent,19,2055,False,68.9,46.0,62.9,Nurture
+HCP0032,James Ferrell,Rheumatology,Midwest,ME,Hospital-owned,16,821,False,59.6,11.4,34.7,Low Opportunity
+HCP0033,Tricia Valencia,Primary Care,South,MO,Academic,6,794,False,68.3,70.1,23.0,Low Opportunity
+HCP0034,Nathan Maldonado,Primary Care,Midwest,OH,Integrated Delivery Network,33,1161,False,97.1,68.2,28.2,Low Opportunity
+HCP0035,Debra Davidson,Primary Care,Midwest,MP,Hospital-owned,2,1995,True,99.4,36.7,62.2,Growth
+HCP0036,Jeffrey Chavez,Endocrinology,West,AL,Hospital-owned,7,787,False,63.2,49.6,33.1,Low Opportunity
+HCP0037,Sherri Baker,Cardiology,Northeast,ME,Academic,9,1648,True,64.9,0.0,44.0,Nurture
+HCP0038,Cassandra Gaines,Primary Care,South,LA,Academic,11,679,False,81.4,17.7,14.0,Low Opportunity
+HCP0039,Elizabeth Fowler,Endocrinology,South,IL,Academic,6,1889,True,46.8,35.8,63.8,Nurture
+HCP0040,Brittany Farmer,Oncology,Midwest,NE,Hospital-owned,2,410,False,68.0,19.5,11.1,Low Opportunity
+HCP0041,Paula Moreno,Primary Care,West,WY,Independent,25,2370,False,61.5,57.0,79.6,Nurture
+HCP0042,Fred Smith,Neurology,Midwest,OR,Integrated Delivery Network,34,507,False,67.7,83.9,15.8,Low Opportunity
+HCP0043,Sherry Decker,Oncology,West,PA,Integrated Delivery Network,6,905,False,47.0,17.3,34.0,Low Opportunity
+HCP0044,Anthony Humphrey,Primary Care,Midwest,SD,Integrated Delivery Network,12,847,False,33.4,24.4,18.3,Low Opportunity
+HCP0045,Angelica Tucker,Neurology,South,MD,Independent,19,2718,False,24.7,46.9,85.3,Nurture
+HCP0046,Philip Cannon,Neurology,South,NH,Independent,33,502,False,41.9,75.8,14.1,Low Opportunity
+HCP0047,John Pierce,Primary Care,West,NV,Academic,25,1573,False,53.7,16.3,39.7,Low Opportunity
+HCP0048,Shane Henderson,Endocrinology,Midwest,NV,Independent,28,2034,False,56.7,47.2,51.4,Low Opportunity
+HCP0049,Joshua Blair,Oncology,Midwest,TX,Integrated Delivery Network,21,1820,True,96.9,80.2,62.6,Nurture
+HCP0050,Eric Carney,Cardiology,Northeast,IL,Hospital-owned,16,2290,True,81.9,7.3,69.1,Growth
+HCP0051,Jessica Holmes,Endocrinology,Midwest,NY,Academic,8,2638,True,44.7,15.1,74.7,Nurture
+HCP0052,Danny Morgan,Cardiology,West,NJ,Integrated Delivery Network,31,1471,False,68.3,33.1,45.4,Nurture
+HCP0053,Crystal Robinson,Neurology,Northeast,WY,Hospital-owned,29,2710,False,54.7,31.1,94.1,Growth
+HCP0054,Mark Perez,Oncology,West,MH,Independent,2,1256,False,56.9,59.1,21.2,Low Opportunity
+HCP0055,Shannon Jones,Oncology,South,WY,Hospital-owned,26,3155,False,65.3,47.1,87.1,Nurture
+HCP0056,Michael Lewis,Neurology,Northeast,WA,Hospital-owned,4,1787,False,73.1,4.7,48.7,Nurture
+HCP0057,Timothy Duncan,Primary Care,Midwest,GA,Hospital-owned,27,2447,False,55.9,52.8,88.5,Nurture
+HCP0058,Richard Aguirre,Pulmonology,South,TN,Hospital-owned,30,2843,False,81.1,29.9,91.6,Growth
+HCP0059,Brent Jordan,Cardiology,Midwest,CO,Integrated Delivery Network,6,2609,True,41.4,68.8,88.1,Nurture
+HCP0060,John Daniel,Cardiology,Northeast,LA,Hospital-owned,16,2775,False,62.1,28.8,78.0,Nurture
+HCP0061,Victoria Garcia,Oncology,South,NY,Independent,6,1879,False,100.0,28.6,50.1,Nurture
+HCP0062,Gerald Hensley,Primary Care,South,TN,Hospital-owned,21,473,True,66.0,53.4,18.4,Low Opportunity
+HCP0063,Connor West,Pulmonology,Northeast,SC,Hospital-owned,33,1755,True,87.8,58.0,55.6,Nurture
+HCP0064,Donald Wright,Neurology,Midwest,RI,Independent,4,867,False,63.6,51.4,31.6,Low Opportunity
+HCP0065,Jessica Callahan,Pulmonology,Northeast,MA,Independent,15,2883,False,72.5,6.6,89.0,Growth
+HCP0066,Amber Kidd,Pulmonology,South,CO,Academic,35,1024,False,61.0,53.3,34.4,Low Opportunity
+HCP0067,Tracy House,Pulmonology,South,GU,Independent,12,999,False,58.9,20.3,32.6,Low Opportunity
+HCP0068,Carol Tucker,Primary Care,South,WV,Integrated Delivery Network,6,1060,False,48.0,46.9,39.5,Low Opportunity
+HCP0069,James Brown,Cardiology,West,IA,Independent,18,2181,False,69.7,12.1,75.0,Growth
+HCP0070,William Baker,Primary Care,West,TX,Independent,19,1978,False,46.7,51.4,49.2,Low Opportunity
+HCP0071,Jordan Henderson,Endocrinology,Midwest,ME,Academic,24,3054,False,74.0,25.1,77.9,Growth
+HCP0072,Whitney Peters,Primary Care,Northeast,IN,Integrated Delivery Network,12,1536,False,81.5,15.1,56.3,Nurture
+HCP0073,Brittney Phillips,Neurology,South,AS,Independent,34,1154,False,68.6,57.0,45.7,Low Opportunity
+HCP0074,Lauren Daniels,Endocrinology,West,ID,Independent,19,490,False,56.8,47.1,7.2,Low Opportunity
+HCP0075,Amy Silva,Cardiology,West,FL,Independent,11,370,False,70.2,29.1,0.0,Low Opportunity
+HCP0076,Sarah Moore,Endocrinology,Northeast,AK,Hospital-owned,34,1414,True,56.4,72.5,45.2,Low Opportunity
+HCP0077,Angela Lopez,Endocrinology,Northeast,AZ,Hospital-owned,33,2988,False,78.8,32.7,100.0,Growth
+HCP0078,Megan Young,Oncology,Northeast,IA,Independent,18,1842,False,29.0,42.7,72.2,Low Opportunity
+HCP0079,Steve Sanchez,Pulmonology,Northeast,NJ,Independent,2,2896,True,56.0,47.6,95.1,Nurture
+HCP0080,Lisa Barnes,Neurology,South,RI,Hospital-owned,22,639,False,26.2,29.0,17.1,Low Opportunity
+HCP0081,Kelly Donovan,Oncology,South,PR,Integrated Delivery Network,20,615,False,35.1,51.9,12.2,Low Opportunity
+HCP0082,Mike Allen,Primary Care,Midwest,WI,Academic,7,2725,True,86.5,30.8,85.7,Growth
+HCP0083,Michael Evans,Neurology,Midwest,CA,Hospital-owned,23,654,False,78.1,33.4,18.1,Low Opportunity
+HCP0084,Paul Jones,Endocrinology,West,NH,Independent,30,498,False,49.0,70.6,7.5,Low Opportunity
+HCP0085,Zachary Ferrell,Cardiology,Midwest,MT,Independent,5,1501,False,35.0,20.1,63.5,Nurture
+HCP0086,Daniel Baker,Cardiology,West,FM,Independent,26,2985,False,8.6,0.0,100.0,Nurture
+HCP0087,Shirley Suarez,Oncology,West,SC,Academic,6,2314,False,52.2,75.8,81.8,Nurture
+HCP0088,Christopher Bass,Primary Care,Midwest,OK,Integrated Delivery Network,27,632,False,100.0,95.5,12.5,Low Opportunity
+HCP0089,Lisa Archer,Endocrinology,Northeast,ID,Integrated Delivery Network,16,2735,False,69.8,33.5,92.7,Growth
+HCP0090,Aimee Montoya,Primary Care,West,VT,Integrated Delivery Network,2,2754,False,51.9,1.3,91.6,Growth
+HCP0091,Matthew Mcmillan,Cardiology,South,UT,Integrated Delivery Network,34,2631,True,70.4,35.5,86.2,Growth
+HCP0092,Brian Rodriguez,Oncology,Midwest,MS,Integrated Delivery Network,7,2922,False,33.9,36.0,100.0,Nurture
+HCP0093,Denise Jacobs,Primary Care,South,NM,Independent,22,1033,False,56.6,38.0,37.5,Low Opportunity
+HCP0094,Christina Walters,Primary Care,South,MO,Independent,8,3141,False,63.8,18.6,100.0,Growth
+HCP0095,John Whitehead,Primary Care,West,IA,Independent,33,1263,False,60.5,54.2,44.8,Low Opportunity
+HCP0096,Anna Henderson,Pulmonology,Midwest,FL,Hospital-owned,27,2635,True,76.2,53.0,85.5,Nurture
+HCP0097,Aaron Wise,Primary Care,West,SD,Independent,29,2001,False,68.2,10.6,48.6,Nurture
+HCP0098,Deborah Figueroa,Cardiology,West,UT,Integrated Delivery Network,16,2571,False,74.0,56.7,81.4,Nurture
+HCP0099,Jessica Smith,Cardiology,Northeast,AL,Hospital-owned,17,2139,False,49.6,85.1,62.7,Low Opportunity
+HCP0100,Stephen Mckee,Rheumatology,Northeast,MH,Hospital-owned,23,2181,True,78.2,45.6,58.3,Nurture
+HCP0101,Sandra Aguilar,Rheumatology,South,WV,Independent,28,2106,False,91.3,34.9,79.6,Growth
+HCP0102,Cameron Parker,Oncology,Northeast,VI,Independent,30,2570,True,44.5,39.0,94.5,Nurture
+HCP0103,Rebecca Valencia,Endocrinology,Midwest,WI,Independent,2,2456,True,46.0,54.9,88.0,Nurture
+HCP0104,Christine Wright,Rheumatology,Midwest,FM,Integrated Delivery Network,24,733,True,86.0,5.7,25.1,Nurture
+HCP0105,Richard Henson,Neurology,West,CT,Hospital-owned,5,2704,False,58.6,45.5,95.7,Nurture
+HCP0106,Marc Moore,Oncology,West,WI,Academic,11,1877,True,87.3,33.8,59.0,Nurture
+HCP0107,Sharon Cherry,Primary Care,Northeast,NE,Independent,30,1270,False,54.0,80.8,41.5,Low Opportunity
+HCP0108,Sierra Johnson,Endocrinology,West,IN,Hospital-owned,10,1815,False,88.2,38.3,48.3,Nurture
+HCP0109,Evelyn Galvan,Cardiology,Northeast,HI,Hospital-owned,29,3105,True,64.4,77.0,100.0,Nurture
+HCP0110,Sharon Cochran,Rheumatology,South,AS,Academic,17,2794,True,66.6,18.8,88.2,Growth
+HCP0111,Richard Rodriguez,Primary Care,West,UT,Academic,9,2726,True,90.2,54.3,75.2,Nurture
+HCP0112,Shannon Walker,Endocrinology,West,NC,Independent,13,1668,False,55.5,48.7,52.0,Low Opportunity
+HCP0113,Julia Torres,Primary Care,Northeast,NH,Integrated Delivery Network,20,2584,False,45.1,23.8,80.5,Nurture
+HCP0114,Crystal Johnson,Pulmonology,West,AR,Independent,28,1447,True,53.9,45.7,59.8,Nurture
+HCP0115,Garrett Lin,Endocrinology,Northeast,OH,Integrated Delivery Network,22,2305,False,70.1,67.5,79.5,Nurture
+HCP0116,Diana May,Neurology,South,IA,Independent,33,2172,True,33.8,35.2,68.3,Nurture
+HCP0117,William Herrera,Neurology,Midwest,PW,Independent,31,1061,False,73.5,6.5,35.3,Nurture
+HCP0118,Ashley Waller,Oncology,Midwest,PR,Integrated Delivery Network,27,1109,False,52.3,41.6,35.2,Low Opportunity
+HCP0119,Victor Baker,Primary Care,Northeast,DE,Independent,22,524,False,82.7,23.0,14.8,Low Opportunity
+HCP0120,Jeffrey Chandler,Pulmonology,West,NH,Hospital-owned,11,748,False,18.9,34.8,14.8,Low Opportunity
+HCP0121,Larry Dixon,Pulmonology,Midwest,DC,Hospital-owned,16,1585,False,47.8,40.3,48.6,Low Opportunity
+HCP0122,Kenneth Scott,Oncology,South,AS,Independent,6,1711,True,31.6,6.2,47.8,Low Opportunity
+HCP0123,April Frost,Cardiology,Midwest,NH,Academic,14,820,True,47.1,8.1,15.8,Low Opportunity
+HCP0124,Michelle Harmon,Primary Care,Midwest,TN,Integrated Delivery Network,33,1538,True,66.5,52.1,52.4,Nurture
+HCP0125,Helen Jones,Cardiology,West,NC,Integrated Delivery Network,16,2071,False,58.8,31.0,68.2,Nurture
