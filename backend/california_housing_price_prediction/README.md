@@ -94,6 +94,9 @@ These approaches were tested but did not beat the saved model:
 - Residual correction models
 - Isotonic and grouped calibration
 - Direct KNN/local-regression blends
+- Weighted spatial KNN variants with different median-income distance scaling.
+  These did not beat the current richer KNN feature set before the benchmark was
+  stopped.
 - Full-fit base models for stack test prediction
 - Unsupervised KMeans cluster distance features. These were removed because the
   no-cluster feature-engineered CatBoost model scored better.
