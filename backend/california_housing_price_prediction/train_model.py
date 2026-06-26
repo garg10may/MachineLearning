@@ -5,7 +5,7 @@ import joblib
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-from modeling import StackedHousingRegressor
+from modeling import FeatureEngineeredHousingRegressor
 
 
 TARGET_COLUMN = "median_house_value"
@@ -24,7 +24,7 @@ def load_split(project_dir):
 
 
 def build_model():
-    return StackedHousingRegressor(n_splits=5, random_state=42)
+    return FeatureEngineeredHousingRegressor(random_state=42)
 
 
 def evaluate(y_true, predictions):

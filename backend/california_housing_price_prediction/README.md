@@ -9,9 +9,9 @@ The current saved model was evaluated on `california_housing_test.csv`.
 
 | Metric | Value |
 | --- | ---: |
-| R2 score | 0.873936 |
-| MAE | 24,452.12 |
-| RMSE | 40,157.03 |
+| R2 score | 0.867549 |
+| MAE | 24,864.13 |
+| RMSE | 41,161.73 |
 
 Saved outputs:
 
@@ -61,25 +61,20 @@ recalculation against the provided test CSV.
    - LightGBM
    - CatBoost
 
-5. Built an out-of-fold stacked ensemble in `modeling.py`.
-   - Base models are trained across 5 folds.
-   - Out-of-fold predictions train the ridge meta-model.
-   - Test predictions are averaged from fold models.
+5. Replaced the earlier stacked ensemble with one feature-engineered CatBoost
+   model.
+   - The final training path is `FeatureEngineeredHousingRegressor`.
+   - It uses one CatBoost regressor, not a stacked ensemble.
+   - The complexity is concentrated in deterministic and spatial features.
 
-6. Added complementary stack members.
-   - Histogram gradient boosting
-   - LightGBM
-   - XGBoost
-   - CatBoost
-   - Log-target CatBoost
-   - Deeper CatBoost
-   - Log-target histogram gradient boosting
+6. Added deterministic spatial feature engineering.
+   - Coordinate polynomial interactions
+   - Income and coordinate interactions
+   - Quantized longitude/latitude bins
+   - Radial basis features around major California regions
+   - Unsupervised KMeans geospatial cluster labels and distances
 
-7. Tuned the stack meta-model.
-   - Ridge meta-model with standardized meta-features
-   - Final ridge alpha: `0.01`
-
-8. Added target-range clipping.
+7. Added target-range clipping.
    - Predictions are clipped to the observed training target range.
    - This matches the capped target behavior in the dataset and improved the
      verified R2 slightly.
@@ -95,6 +90,9 @@ These approaches were tested but did not beat the saved model:
 - Isotonic and grouped calibration
 - Direct KNN/local-regression blends
 - Full-fit base models for stack test prediction
+- Stacked ensembles with HGB, LightGBM, XGBoost, CatBoost, log-target CatBoost,
+  deeper CatBoost, and log-target HGB. The stack reached a slightly higher score
+  but was removed to keep the final model focused on feature engineering.
 - External `ocean_proximity` feature from the richer public California housing
   dataset
 
@@ -106,12 +104,12 @@ From this directory:
 ../.venv/bin/python train_model.py
 ```
 
-The script trains the stacked model, writes the model artifact, writes metrics,
-and prints the final evaluation score.
+The script trains the feature-engineered CatBoost model, writes the model
+artifact, writes metrics, and prints the final evaluation score.
 
 ## Current limitation
 
 The requested target was an R2 score of `0.9`. The best verified score reached
-with honest train-only modeling against the provided test split is `0.873936`.
-The remaining error is concentrated mainly in high-value homes, especially near
-the capped target value.
+with the current single-model, feature-engineered approach is `0.867549`. The
+remaining error is concentrated mainly in high-value homes, especially near the
+capped target value.
