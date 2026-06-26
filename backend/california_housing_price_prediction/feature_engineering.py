@@ -46,11 +46,17 @@ class HousingFeatureBuilder(BaseEstimator, TransformerMixin):
 
 
 class SpatialKNNFeatures(BaseEstimator, TransformerMixin):
-    """Supervised neighborhood features from nearby training rows."""
+    """Supervised neighborhood distribution features from nearby training rows."""
 
-    def __init__(self, ks=(3, 5, 10, 20, 50, 100), use_income=True):
+    def __init__(
+        self,
+        ks=(3, 5, 10, 20, 50, 100),
+        use_income=True,
+        high_value_thresholds=(300000, 400000, 500000),
+    ):
         self.ks = ks
         self.use_income = use_income
+        self.high_value_thresholds = high_value_thresholds
 
     def _matrix(self, X):
         columns = ["longitude", "latitude"]
@@ -99,6 +105,24 @@ class SpatialKNNFeatures(BaseEstimator, TransformerMixin):
             names.append(f"knn_median_{k}")
             features.append(neighbor_values.std(axis=1))
             names.append(f"knn_std_{k}")
+            features.append(neighbor_values.min(axis=1))
+            names.append(f"knn_min_{k}")
+            features.append(neighbor_values.max(axis=1))
+            names.append(f"knn_max_{k}")
+            features.append(np.quantile(neighbor_values, 0.25, axis=1))
+            names.append(f"knn_q25_{k}")
+            features.append(np.quantile(neighbor_values, 0.75, axis=1))
+            names.append(f"knn_q75_{k}")
+            features.append(neighbor_distances.mean(axis=1))
+            names.append(f"knn_distance_mean_{k}")
+            features.append(neighbor_distances.min(axis=1))
+            names.append(f"knn_distance_min_{k}")
+            features.append(neighbor_distances.max(axis=1))
+            names.append(f"knn_distance_max_{k}")
+
+            for threshold in self.high_value_thresholds:
+                features.append((neighbor_values >= threshold).mean(axis=1))
+                names.append(f"knn_high_rate_{threshold}_{k}")
 
         return np.vstack(features).T
 
@@ -161,6 +185,34 @@ class DeterministicSpatialFeatures(BaseEstimator, TransformerMixin):
             )
 
         return np.vstack(features).T
+
+
+class HousingShapeFeatures(BaseEstimator, TransformerMixin):
+    """Additional deterministic room, population, and income interactions."""
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        eps = 1e-9
+        rooms = X["total_rooms"].to_numpy(dtype=float)
+        bedrooms = X["total_bedrooms"].to_numpy(dtype=float)
+        population = X["population"].to_numpy(dtype=float)
+        households = X["households"].to_numpy(dtype=float)
+        income = X["median_income"].to_numpy(dtype=float)
+
+        return np.vstack(
+            [
+                rooms / (bedrooms + eps),
+                population / (rooms + eps),
+                households / (rooms + eps),
+                income * np.log1p(households),
+                income * np.log1p(population),
+                income / (bedrooms / (rooms + eps) + eps),
+                np.log1p(rooms) / (np.log1p(population) + eps),
+                np.log1p(bedrooms) / (np.log1p(households) + eps),
+            ]
+        ).T
 
 
 class ClusterDistanceFeatures(BaseEstimator, TransformerMixin):

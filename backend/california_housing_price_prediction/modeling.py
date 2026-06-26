@@ -4,8 +4,8 @@ from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.pipeline import FeatureUnion, Pipeline
 
 from feature_engineering import (
-    ClusterDistanceFeatures,
     DeterministicSpatialFeatures,
+    HousingShapeFeatures,
     HousingFeatureBuilder,
     SpatialKNNFeatures,
 )
@@ -15,6 +15,7 @@ def build_feature_union():
     return FeatureUnion(
         [
             ("base", HousingFeatureBuilder()),
+            ("shape", HousingShapeFeatures()),
             ("spatial", DeterministicSpatialFeatures()),
             (
                 "knn_geo_income",
@@ -24,8 +25,6 @@ def build_feature_union():
                 "knn_geo",
                 SpatialKNNFeatures(ks=(3, 5, 10, 20, 50, 100, 200), use_income=False),
             ),
-            ("cluster_geo", ClusterDistanceFeatures(n_clusters=40, include_income=False)),
-            ("cluster_geo_income", ClusterDistanceFeatures(n_clusters=40, include_income=True)),
         ]
     )
 

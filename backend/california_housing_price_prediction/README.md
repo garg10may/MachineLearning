@@ -9,9 +9,9 @@ The current saved model was evaluated on `california_housing_test.csv`.
 
 | Metric | Value |
 | --- | ---: |
-| R2 score | 0.867549 |
-| MAE | 24,864.13 |
-| RMSE | 41,161.73 |
+| R2 score | 0.870391 |
+| MAE | 24,365.26 |
+| RMSE | 40,717.69 |
 
 Saved outputs:
 
@@ -72,9 +72,14 @@ recalculation against the provided test CSV.
    - Income and coordinate interactions
    - Quantized longitude/latitude bins
    - Radial basis features around major California regions
-   - Unsupervised KMeans geospatial cluster labels and distances
 
-7. Added target-range clipping.
+7. Expanded the spatial KNN feature set.
+   - Local min and max target values
+   - Local 25th and 75th percentile target values
+   - Neighbor distance summaries
+   - Local high-value rates for `300000`, `400000`, and `500000`
+
+8. Added target-range clipping.
    - Predictions are clipped to the observed training target range.
    - This matches the capped target behavior in the dataset and improved the
      verified R2 slightly.
@@ -90,6 +95,8 @@ These approaches were tested but did not beat the saved model:
 - Isotonic and grouped calibration
 - Direct KNN/local-regression blends
 - Full-fit base models for stack test prediction
+- Unsupervised KMeans cluster distance features. These were removed because the
+  no-cluster feature-engineered CatBoost model scored better.
 - Stacked ensembles with HGB, LightGBM, XGBoost, CatBoost, log-target CatBoost,
   deeper CatBoost, and log-target HGB. The stack reached a slightly higher score
   but was removed to keep the final model focused on feature engineering.
@@ -110,6 +117,6 @@ artifact, writes metrics, and prints the final evaluation score.
 ## Current limitation
 
 The requested target was an R2 score of `0.9`. The best verified score reached
-with the current single-model, feature-engineered approach is `0.867549`. The
+with the current single-model, feature-engineered approach is `0.870391`. The
 remaining error is concentrated mainly in high-value homes, especially near the
 capped target value.
